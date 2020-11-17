@@ -9,13 +9,13 @@ console.log("cow =", cow);
 console.log("dog =", dog);
 
 //Знаходимо мах і мін
-let max=Math.max(cat, dog, cow);
-let min=Math.min(cat, dog, cow);
+const max=Math.max(cat, dog, cow);
+const min=Math.min(cat, dog, cow);
 console.log("Maximum=", max);
 console.log("Minimum=", min);
 
 //Знаходимо суму
-let summ = cat+dog+cow;
+const summ = cat+dog+cow;
 console.log("Summ=", summ);
 
 //Відкидуємо копійки і складаємо цілу частину
@@ -40,8 +40,9 @@ console.log("cow cost pair?", CowPart);
 console.log("dog cost pair?", DogPart);
 
 //Вивести суму решти при оплаті 500
-let change=Math.floor((500-summ),2);
-console.log("Your change from 500=", change);
+let cash=500;
+let change=((cash-summ).toFixed(2));
+console.log("Your change=", change);
 
 //Вивести середнє значення округлене до другого знаку
 const average=((summ/3).toFixed(2));
@@ -49,8 +50,8 @@ console.log("Average =", average)
 
 //Створити змінну з випадковою знижкою Math.random
 let discont=Math.random();
-discont=Math.floor(discont);
-console.log("Your discount=",discont*100, "%");
+discont=Math.floor(discont)*100;
+console.log("Your discount=",discont, "%");
 
 //
 

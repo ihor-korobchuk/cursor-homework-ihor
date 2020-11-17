@@ -49,8 +49,8 @@ const average=((summ/3).toFixed(2));
 console.log("Average =", average)
 
 //Створити змінну з випадковою знижкою Math.random
-let discont=Math.floor(Math.random());
-discont=(discont)*100;
+let discont=Math.random();
+discont=Math.floor(discont)*100;
 console.log("Your discount=",discont, "%");
 
 //

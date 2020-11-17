@@ -12,3 +12,11 @@ console.log("Maximum=", max);
 console.log("Minimum=", min);
 let summ = apple+eggs+milk;
 console.log("Summ=", summ);
+
+
+apple=Math.round(apple);
+milk=Math.round(milk);
+eggs=Math.round(eggs);
+console.log("Apple cost=", apple);
+console.log("Milk cost=",milk);
+console.log("Eggs cost=",eggs);

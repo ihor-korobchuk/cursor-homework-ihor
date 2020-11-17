@@ -26,11 +26,8 @@ let SummOffCent=CostOffCentCat+CostOffCentCow+CostOffCentDog;
 console.log("SummOffCent=", SummOffCent);
 
 //Вивести суму округлену до сотень
-let SummRound100=1;{
-if ((SummRound100*100)<summ, SummRound100++)  
-console.log("Round to 100=", SummRound100);
-else
-}
+let RoundPrice=Math.round(summ / 100) * 100;
+console.log(RoundPrice);
 
 
 

@@ -4,9 +4,9 @@ console.log("First homework");
 const cat=15.678;
 const cow=123.965;
 const dog=90.2345;
-console.log("cat weight=", cat);
-console.log("cow weight=", cow);
-console.log("dog weight=", dog);
+console.log("cat =", cat);
+console.log("cow =", cow);
+console.log("dog =", dog);
 
 //Знаходимо мах і мін
 let max=Math.max(cat, dog, cow);
@@ -33,11 +33,11 @@ console.log("Round to 100=", SummRound100);
 
 
 //Вивести суму решти при оплаті 500
-let change=Math.ceil((500-summ),2);
+let change=Math.floor((500-summ),2);
 console.log("Your change from 500=", change);
 
 //Вивести середнє значення округлене до другого знаку
-let average=Math.ceil((cat+dog+cow)/3,2);
+let average=Math.floor((cat+dog+cow)/3,2);
 console.log("Average =", average)
 
 //Створити змінну з випадковою знижкою Math.random

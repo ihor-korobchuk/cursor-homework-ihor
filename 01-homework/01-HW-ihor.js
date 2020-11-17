@@ -3,7 +3,7 @@ console.log("First homework");
 //Оголошуємо змінні
 const cat=15.678;
 const cow=123.965;
-const dog=900.2345;
+const dog=90.2345;
 console.log("cat =", cat);
 console.log("cow =", cow);
 console.log("dog =", dog);
@@ -27,7 +27,7 @@ console.log("SummOffCent=", SummOffCent);
 
 //Вивести суму округлену до сотень
 let RoundPrice=Math.round(summ / 100) * 100;
-console.log(RoundPrice);
+console.log("RoundPrice=",RoundPrice);
 
 
 
@@ -49,8 +49,8 @@ const average=((summ/3).toFixed(2));
 console.log("Average =", average)
 
 //Створити змінну з випадковою знижкою Math.random
-let discont=Math.random();
-discont=Math.floor(discont)*100;
+let discont=Math.floor(Math.random());
+discont=(discont)*100;
 console.log("Your discount=",discont, "%");
 
 //

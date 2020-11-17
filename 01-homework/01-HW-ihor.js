@@ -29,6 +29,7 @@ console.log("SummOffCent=", SummOffCent);
 let SummRound100=1;{
 if ((SummRound100*100)<summ, SummRound100++)  
 console.log("Round to 100=", SummRound100);
+else
 }
 
 

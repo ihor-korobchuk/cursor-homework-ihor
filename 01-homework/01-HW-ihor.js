@@ -3,7 +3,7 @@ console.log("First homework");
 //Оголошуємо змінні
 const cat=15.678;
 const cow=123.965;
-const dog=90.2345;
+const dog=900.2345;
 console.log("cat =", cat);
 console.log("cow =", cow);
 console.log("dog =", dog);
@@ -27,8 +27,7 @@ console.log("SummOffCent=", SummOffCent);
 
 //Вивести суму округлену до сотень
 let SummRound100=1;{
-if ((SummRound100*100)<summ, SummRound100++) 
-else 
+if ((SummRound100*100)<summ, SummRound100++)  
 console.log("Round to 100=", SummRound100);
 }
 
@@ -47,12 +46,12 @@ let change=Math.floor((500-summ),2);
 console.log("Your change from 500=", change);
 
 //Вивести середнє значення округлене до другого знаку
-let average=Math.floor((cat+dog+cow)/3,2);
+const average=((summ/3).toFixed(2));
 console.log("Average =", average)
 
 //Створити змінну з випадковою знижкою Math.random
 let discont=Math.random();
-discont=Math.floor(discont, 2);
+discont=Math.floor(discont);
 console.log("Your discount=",discont*100, "%");
 
 //

@@ -26,11 +26,16 @@ let SummOffCent=CostOffCentCat+CostOffCentCow+CostOffCentDog;
 console.log("SummOffCent=", SummOffCent);
 
 //Вивести суму округлену до сотень
-let SummRound100=Math.ceil(summ, 3)
+let SummRound100=Math.ceil(summ/100)*100;
 console.log("Round to 100=", SummRound100);
 
 //Вивести чи є число парним
-
+let CatPart=CostOffCentCat%2===0;
+let CowPart=CostOffCentCow%2===0;
+let DogPart=CostOffCentDog%2===0;
+console.log("cat cost pair?", CatPart);
+console.log("cow cost pair?", CowPart);
+console.log("dog cost pair?", DogPart);
 
 //Вивести суму решти при оплаті 500
 let change=Math.floor((500-summ),2);
@@ -42,6 +47,7 @@ console.log("Average =", average)
 
 //Створити змінну з випадковою знижкою Math.random
 let discont=Math.random();
+discont=Math.floor(discont, 4);
 console.log("Your discount=",discont*100, "%");
 
 //

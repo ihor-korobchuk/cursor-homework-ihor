@@ -50,8 +50,7 @@ console.log("Average =", average)
 
 //Створити змінну з випадковою знижкою Math.random
 let discont=Math.random();
-discont=Math.floor(discont)*100;
-console.log("Your discount=",discont, "%");
+console.log("Your discount=",discont*100, "%");
 
 //
 

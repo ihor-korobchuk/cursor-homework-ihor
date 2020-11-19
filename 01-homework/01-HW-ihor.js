@@ -30,14 +30,7 @@ console.log("RoundPrice=",roundPrice);
 
 //Вивести чи є число парним
 const priceSummPairOrNot=priceSumm%2===0;
-console.log("dog cost pair?", priceSummPairOrNo);
-
-//const catPart=costOffCentCat%2===0;
-//const cowPart=costOffCentCow%2===0;
-//const dogPart=costOffCentDog%2===0;
-//console.log("cat cost pair?", catPart);
-//console.log("cow cost pair?", cowPart);
-//console.log("dog cost pair?", dogPart);
+console.log("dog cost pair?", priceSummPairOrNot);
 
 //Вивести суму решти при оплаті 500
 const cash=500;

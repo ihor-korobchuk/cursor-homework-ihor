@@ -1,0 +1,1 @@
+console.log("Test for home work 02");

@@ -31,7 +31,7 @@ console.log("Summary price is Pair?", priceSummPairOrNot);
 
 //Вивести суму решти при оплаті 500
 const cash=500;
-const change=(cash-priceSumm);
+const change=Number(cash-priceSumm).toFixed(2);
 console.log("Your change=", change);
 
 //Вивести середнє значення округлене до другого знаку

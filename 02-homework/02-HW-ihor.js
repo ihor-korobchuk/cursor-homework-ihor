@@ -13,10 +13,8 @@ do {
 while (secondNum < firstNum) {
     secondNum = prompt("Друге число повиннне бути більшим за перше, введіть число ще раз:" );
   } 
-  do {
-    secondNum = Number(prompt("Введіть число до якого будемо складати"));
-} while (!Number.isInteger(secondNum));
-
+  
+    
 const onlyPairNumber = confirm("Потрібно пропускати парні числа при обчисленні суми?");
 
 let summNumber = 0;

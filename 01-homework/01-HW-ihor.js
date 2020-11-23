@@ -22,27 +22,25 @@ const summOffCent=(Math.floor(priceCat)+Math.floor(priceCow)+Math.floor(priceDog
 console.log("SummOffCent=", summOffCent);
 
 //Вивести суму округлену до сотень
-const roundPrice=Math.round(priceSumm / 100) * 100;
+const roundPrice=Math.ceil(summOffCent / 100) * 100;
 console.log("RoundPrice=",roundPrice);
 
 //Вивести чи є число парним
-const priceSummPairOrNot=priceSumm%2===0;
+const priceSummPairOrNot=summOffCent%2===0;
 console.log("Summary price is Pair?", priceSummPairOrNot);
 
 //Вивести суму решти при оплаті 500
 const cash=500;
-const change=Math.floor(cash-priceSumm);
-+change.toFixed(2);
+const change=(cash-priceSumm);
 console.log("Your change=", change);
 
 //Вивести середнє значення округлене до другого знаку
-const average=Math.round(priceSumm/3);
-+average.toFixed(2);
+const average=Number(priceSumm/3).toFixed(2);
 console.log("Average =", average)
 
 //Створити змінну з випадковою знижкою Math.random
-let discont=Math.random()*100;
-discont=Math.floor(discont);
-console.log("Your discount=",discont, "%");
-
+const maxDiscount = 50;
+const minDiscount = 10;
+const personalDiscount = Math.round(Math.random()*(maxDiscount-minDiscount+1))+minDiscount;
+console.log("Your discount=", personalDiscount);
 

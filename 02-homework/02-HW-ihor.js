@@ -1,7 +1,6 @@
 console.log("Homework 02");
+//Отримайте у користувача число(N) від якого ми будемо складати. Отримати число можна за допомогою prompt. Пам'ятайте, ЧИСЛО, не РЯДОК!
 let params = {};
-
-/** функция которая запрашивает чвава */
 function enterNumber(text) {
     let number;
     do {
@@ -21,19 +20,19 @@ if (params.end < params.start) {
     !Number.isInteger(params.end) ||  params.end < params.start)
 }
   
-    
+//Отримайте у користувача булевий параметр(true/false), який підкаже нам чи потрібно пропускати парні числа. 
 const isOnlyOddNumber = confirm("Потрібно пропускати парні числа при обчисленні суми?");
 
-/** сужает граници до нечетн числе*/
+//омежує межу непарних чисел
 function oddLimits(params) {
     return {
         start : params.start % 2 === 0 ? params.start + 1 : params.start, 
         end : params.end = params.end%2 === 0 ? params.end -1 : params.end
     }  
  }
- /** Возвращает сумму арифиетической прогресии*/
+ //повертає суму арифметичної прогресії
  function getSummOfArifmProgression(params,delta) {
-     /** Кколичество єлементов */
+     //кількість елементів в прогресії
      const n = (params.end-params.start)/delta+1;
      return ((params.start+ params.end)*n/2) 
     }
